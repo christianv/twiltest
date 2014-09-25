@@ -1,0 +1,34 @@
+{
+  "name": "twiltest",
+  "version": "0.0.1",
+  "description": "Test out twilio",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christianv/twiltest.git"
+  },
+  "keywords": [
+    "Twilio",
+    "test"
+  ],
+  "engines": {
+    "node": "0.10.x"
+  },
+  "author": {
+    "email": "vueringschristian@gmail.com",
+    "name": "Christian Vuerings",
+    "url": "http://denbuzze.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christianv/twiltest/issues"
+  },
+  "homepage": "https://github.com/christianv/twiltest",
+  "dependencies": {
+    "express": "^4.9.4",
+    "twilio": "^1.7.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
