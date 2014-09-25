@@ -37,9 +37,12 @@ var sendMessage = function(text) {
   });
 };
 
+app.all('/', function(req, res) {
+  res.send('Hey there');
+});
+
 app.get('/message/:text', function(req, res){
   var message = req.params.text;
   sendMessage(message);
   res.send('Sending the following message:' + message);
-  // process.env.GITHUB_PASSWORD
 });
