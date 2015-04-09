@@ -1,7 +1,7 @@
 var express = require('express');
 var client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 4000;
 app.listen(port);
 
 app.use(express.static('public'));
@@ -17,7 +17,7 @@ var sendMessage = function(text) {
   client.sendMessage({
 
     to:'+15108472341', // Any number Twilio can deliver to
-    from: '+19252939110', // A number you bought from Twilio and can use for outbound communication
+    from: '+14157924052', // A number you bought from Twilio and can use for outbound communication
     body: text // body of the SMS message
 
   }, function(err, responseData) { //this function is executed when a response is received from Twilio
